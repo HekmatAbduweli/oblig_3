@@ -1,0 +1,17 @@
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li {
+      float: left;
+      a {
+        display: block;
+        padding: 12px;
+        background-color: #dddddd;
+        text-decoration: none;
+      }
+    }
+  }
+}

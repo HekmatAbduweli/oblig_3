@@ -1,0 +1,15 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: block;
+  padding: 12px;
+  background-color: #dddddd;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

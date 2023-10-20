@@ -4,13 +4,12 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #dddddd;
     li {
       float: left;
-      a {
-        display: block;
-        padding: 12px;
-        background-color: #dddddd;
-        text-decoration: none;
+      i{
+        font-size: 30px;
+        padding: 10px
       }
     }
   }

@@ -1,16 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// navigation bar
 nav {
+  padding: 10px 20px;
+  background-color: #dddddd;
+  font-size: 2rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  // a{
+  //   padding: 10px auto;
+  //   text-decoration: none;
+  //   color: black;
+  // }
   ul {
+    display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #dddddd;
+    justify-content: space-between;
+    width: 100%;
     li {
-      float: left;
-      i{
-        font-size: 30px;
-        padding: 10px
+      margin: 0 10px;
+    }
+  }
+}
+
+// navigation bar end
+
+// main section
+#home-page {
+  overflow: auto;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 60px;
+  #discount-section {
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  #shopping-section {
+    width: 90%;
+    margin: auto;
+    .logo {
+      border-radius: 5px;
+      display: inline-flex;
+      width: 100%;
+      height: 71px;
+      background-color: #c7c7c7;
+      img {
+        left: 2rem;
+        top: 0;
       }
     }
+
+    .shoes {
+      display: flex;
+      overflow: auto;
+      white-space: nowrap;
+      margin-right: 5px;
+      img {
+        margin: 5px;
+      }
+      .vans {
+        width: 111px;
+      }
+    }
+  }
+}
+
+//product page
+
+#product {
+  margin: auto;
+  margin-bottom: 60px;
+  img {
+    width: 100%;
   }
 }

@@ -31,14 +31,27 @@
         <ul>
           <!-- <li><input type="text" /></li> -->
           <li>
-            <a href="index.html"><i class="fa-solid fa-house" style="color: #000000"></i></a></li>
-          <li>
-            <a href="#"><i class="fa-solid fa-heart" style="color: #909090"></i></a></li>
-          <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #909090"></i></a>
+            <a href="index.html"
+              ><i class="fa-solid fa-house" style="color: #000000"></i
+            ></a>
           </li>
           <li>
-            <a href="checkout.html"><i class="fa-solid fa-cart-shopping" style="color: #909090"></i></a>
+            <a href="#"
+              ><i class="fa-solid fa-heart" style="color: #909090"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #909090"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="checkout.html"
+              ><i class="fa-solid fa-cart-shopping" style="color: #909090"></i
+            ></a>
           </li>
         </ul>
       </nav>
@@ -65,11 +78,24 @@
         </p>
       </section>
       <section class="button-section">
-        <button class="btn">
+        <!-- <button class="btn">
           Size <i class="fa-solid fa-angle-down"></i>
-        </button>
-        <button class="btn cart">Add to cart</button>
+        </button> -->
+        <select name="size" class="btn" id="option">
+          <option value="">Size</option>
+        </select>
+        <a href="checkout.html" class="btn cart">Add to cart</a>
       </section>
     </main>
   </body>
+  <script>
+    function sizelist(i) {
+      const option = document.getElementById("option");
+      for (i = 38; i <= 49; i++) {
+        let size = new Option(i, i);
+        option.appendChild(size);
+      }
+    }
+    sizelist();
+  </script>
 </html>

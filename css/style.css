@@ -100,8 +100,8 @@ nav ul li {
 
 .button-section {
   width: 100%;
-  position: absolute;
-  bottom: 5rem;
+  margin: auto;
+  margin-top: 130px;
   display: flex;
   justify-content: center;
 }
@@ -113,6 +113,7 @@ nav ul li {
   border-radius: 5px;
   text-align: center;
   color: black;
+  text-decoration: none;
 }
 .button-section .btn p {
   font-size: small;

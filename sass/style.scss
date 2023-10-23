@@ -24,9 +24,13 @@ nav {
     list-style-type: none;
     justify-content: space-between;
     width: 100%;
+
     li {
       margin: 0 10px;
     }
+  }
+  .left-desk {
+    display: none;
   }
 }
 
@@ -34,11 +38,12 @@ nav {
   position: fixed;
   top: 20px;
   left: 20px;
-  a {
+  a,
+  button {
     border: none;
-    padding: 5px 9px;
+    padding: 7px 9px;
     border-radius: 20px;
-    color: white;
+    background-color: white;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 }
@@ -54,7 +59,7 @@ nav {
   margin-bottom: 60px;
   #discount-section {
     border-radius: 5px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -76,26 +81,24 @@ nav {
         top: 0;
       }
     }
-
-    .shoes {
-      display: flex;
-      overflow: auto;
-      white-space: nowrap;
-      margin-right: 5px;
-      img {
-        margin: 5px;
-      }
-      .vans {
-        width: 111px;
-      }
-    }
   }
 }
-
+.shoes {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  margin-right: 5px;
+  img {
+    margin: 5px;
+  }
+  .vans {
+    width: 111px;
+  }
+}
 //product page
 #product-page {
   margin-bottom: 60px;
-  #product {
+  .product {
     margin: auto;
     img {
       width: 100%;
@@ -106,18 +109,27 @@ nav {
     width: 80%;
     margin: auto;
     h1 {
-      margin: 20px 0 50px 0;
+      margin-top: 20px;
+    }
+    p{
+      margin-top:50px ;
     }
   }
 }
 
 //for product page and checkout page
+.more-shoes {
+  display: none;
+}
+
 .button-section {
   width: 100%;
-  margin: auto;
-  margin-top: 130px;
   display: flex;
   justify-content: center;
+  margin: 1rem auto;
+  .price {
+    display: none;
+  }
   .btn {
     margin: 0 15px;
     border: none;
@@ -164,6 +176,122 @@ nav {
       margin: auto;
       margin-right: 20px;
       font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  //navigation
+  nav {
+    position: relative;
+    display: flex;
+    ul {
+      width: 100%;
+      justify-content: space-between;
+
+      .left-desk {
+        display: flex;
+        justify-content: right;
+      }
+      li {
+        margin: 5px 30px;
+      }
+      .hide {
+        display: none;
+      }
+    }
+  }
+
+  .round-btn {
+    display: none;
+  }
+
+  //home page
+  #home-page {
+    width: 100%;
+    #discount-section {
+      margin: 20px 0;
+      border-radius: 0;
+    }
+  }
+
+  footer {
+    width: 100%;
+    height: 320px;
+    background-color: #dddddd;
+  }
+
+  //product page
+
+  #product-page {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    // #more-product{
+    //   display: block;
+    // }
+
+    .product {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+    .for-desktop {
+      width: 50%;
+      margin: 10px;
+    }
+    .button-section {
+      position: inherit;
+      margin: auto;
+      margin-top: 30px;
+
+      .btn {
+        padding: 15px 20px;
+      }
+    }
+  }
+
+  .more-shoes {
+    display: block;
+    margin: 30px;
+  }
+
+  //checkout page
+  .checkout-main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    .checkout-products {
+      width: 750px;
+    }
+
+    .button-section {
+      position: inherit;
+      display: block;
+      width: auto;
+      margin-top: 0 auto;
+      #btn-for-mobile {
+        display: none;
+      }
+      .price {
+        margin: 20px 0;
+        display: block;
+        text-align: right;
+        p {
+          margin: 5px 0;
+        }
+      }
+      .btn {
+        margin: 0 0 0 45px;
+        padding: 10px 30px;
+      }
     }
   }
 }

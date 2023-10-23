@@ -31,16 +31,16 @@
         <ul>
           <!-- <li><input type="text" /></li> -->
           <li>
-            <a href="index.html"
-              ><i class="fa-solid fa-house" style="color: #000000"></i
+            <a href="#"
+              ><i class="fa-solid fa-house" style="color: #909090"></i
             ></a>
           </li>
-          <li>
+          <li class="hide">
             <a href="#"
               ><i class="fa-solid fa-heart" style="color: #909090"></i
             ></a>
           </li>
-          <li>
+          <li class="hide">
             <a href="#"
               ><i
                 class="fa-solid fa-magnifying-glass"
@@ -48,54 +48,94 @@
               ></i
             ></a>
           </li>
-          <li>
+          <li class="hide">
             <a href="checkout.html"
               ><i class="fa-solid fa-cart-shopping" style="color: #909090"></i
             ></a>
           </li>
         </ul>
+
+        <section class="left-desk">
+          <ul>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: #909090"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="checkout.html"
+                ><i class="fa-solid fa-cart-shopping" style="color: #909090"></i
+              ></a>
+            </li>
+          </ul>
+        </section>
       </nav>
-      <div class="round-btn">
+      <section class="round-btn">
         <a href="index.html">
           <i class="fa-solid fa-angle-left" style="color: black"></i>
         </a>
-      </div>
+      </section>
     </header>
 
     <main id="product-page">
-      <section id="product">
+      <section class="product">
         <img src="img/bignike.png" alt="" />
+        <section class="for-desktop">
+          <section id="discription">
+            <article>
+              <h1>Nike AriForce</h1>
+              <h5>1239,00kr</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+                itaque debitis reiciendis distinctio voluptas eligendi
+                exercitationem laboriosam quod expedita officiis et dolorum
+                aspernatur pariatur labore eaque nihil ipsa, aperiam est at
+                impedit? Dolore temporibus ut libero adipisci, nostrum eos
+                veritatis?
+              </p>
+            </article>
+          </section>
+          <section class="button-section">
+            <select name="size" class="btn" id="option">
+              <option value="">Size</option>
+            </select>
+            <a href="checkout.html" class="btn cart">Add to cart</a>
+          </section>
+        </section>
       </section>
-      <div class="small"></div>
-      <section id="discription">
-        <h1>Nike AriForce</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem itaque
-          debitis reiciendis distinctio voluptas eligendi exercitationem
-          laboriosam quod expedita officiis et dolorum aspernatur pariatur
-          labore eaque nihil ipsa, aperiam est at impedit? Dolore temporibus ut
-          libero adipisci, nostrum eos veritatis?
-        </p>
-      </section>
-      <section class="button-section">
-        <!-- <button class="btn">
-          Size <i class="fa-solid fa-angle-down"></i>
-        </button> -->
-        <select name="size" class="btn" id="option">
-          <option value="">Size</option>
-        </select>
-        <a href="checkout.html" class="btn cart">Add to cart</a>
+      <section class="more-shoes">
+        <article>
+          <h2>More</h2>
+        </article>
+        <section class="shoes" id="products">
+          <img src="img/adidas1.png" alt="" />
+          <img src="img/adidas2.png" alt="" />
+          <img src="img/adidas3.png" alt="" />
+          <img src="img/adidas1.png" alt="" />
+          <img src="img/adidas2.png" alt="" />
+          <img src="img/adidas3.png" alt="" />
+          <img src="img/adidas1.png" alt="" />
+          <img src="img/adidas2.png" alt="" />
+          <img src="img/adidas3.png" alt="" />
+          <img src="img/adidas1.png" alt="" />
+          <img src="img/adidas2.png" alt="" />
+          <img src="img/adidas3.png" alt="" />
+        </section>
       </section>
     </main>
-  </body>
-  <script>
-    function sizelist(i) {
-      const option = document.getElementById("option");
-      for (i = 38; i <= 49; i++) {
-        let size = new Option(i, i);
-        option.appendChild(size);
+    <footer></footer>
+    <script>
+      function sizelist(i) {
+        const option = document.getElementById("option");
+        for (i = 38; i <= 49; i++) {
+          let size = new Option(i, i);
+          option.appendChild(size);
+        }
       }
-    }
-    sizelist();
-  </script>
+      sizelist();
+    </script>
+  </body>
 </html>

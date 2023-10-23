@@ -31,48 +31,110 @@
         <ul>
           <!-- <li><input type="text" /></li> -->
           <li>
-            <a href="index.html"><i class="fa-solid fa-house" style="color: #909090"></i></a></li>
-          <li>
-            <a href="#"><i class="fa-solid fa-heart" style="color: #909090"></i></a></li>
-          <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #909090"></i></a>
+            <a href="index.html"
+              ><i class="fa-solid fa-house" style="color: #909090;" ></i
+            ></a>
           </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000"></i></a>
+          <li class="hide">
+            <a href="#"
+              ><i class="fa-solid fa-heart" style="color: #909090"></i
+            ></a>
+          </li>
+          <li class="hide">
+            <a href="#"
+              ><i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #909090"
+              ></i
+            ></a>
+          </li>
+          <li class="hide">
+            <a href="#"
+              ><i class="fa-solid fa-cart-shopping" style="color: #000000""></i
+            ></a>
           </li>
         </ul>
+        <section class="left-desk">
+          <ul>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: #909090"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="checkout.html"
+                ><i class="fa-solid fa-cart-shopping" style="color: #909090"></i
+              ></a>
+            </li>
+          </ul>
+        </section>
       </nav>
-      <div class="round-btn">
-        <a href="#">
-            <i class="fa-solid fa-bars" style="color: #000000"></i>
-        </a>
+      <section class="round-btn">
+        <button id="bar">
+          <i class="fa-solid fa-bars" style="color: #000000"></i>
+        </button>
+      </section>
     </header>
+    <!--main-->
     <main class="checkout-page">
-      <section class="checkout-products">
-        <img src="img/nike1.png" alt="" />
-        <article>
-            <p>Nike Air force 1</p>
-            <p class="non-title">White/black</p>
-            <p class="non-title">1 239,00 kr</p>
-        </article>
-        <i class="fa-solid fa-trash-can"></i>
+      <section class="checkout-main">
+        <section>
+          <section class="checkout-products">
+            <img src="img/nike1.png" alt="" />
+            <article>
+              <p>Nike Air force 1</p>
+              <p class="non-title">White/black</p>
+              <p class="non-title">1 239,00 kr</p>
+            </article>
+            <i class="fa-solid fa-trash-can"></i>
+          </section>
+          <section class="checkout-products">
+            <img src="img/adidas3.png" alt="" />
+            <article>
+              <p>Adidas Super Star</p>
+              <p class="non-title">White/black</p>
+              <p class="non-title">899,00kr</p>
+            </article>
+            <i class="fa-solid fa-trash-can"></i>
+          </section>
+        </section>
+
+        <section class="button-section">
+          <section class="btn" id="btn-for-mobile">
+            <p>Total</p>
+            <p><span>2138,00 kr</span></p>
+          </section>
+          <section class="price">
+            <p>Mellomsum 2138,00kr</p>
+            <p>Frakt 50,00 kr</p>
+            <p>Total 2188,00 kr</p>
+          </section>
+          <button class="btn cart">Check out</button>
+        </section>
       </section>
-      <section class="checkout-products">
-        <img src="img/adidas3.png" alt="" />
+      <section class="more-shoes">
         <article>
-            <p>Adidas Super Star</p>
-            <p class="non-title">White/black</p>
-            <p class="non-title">899,00kr</p>
+          <h2>More</h2>
         </article>
-        <i class="fa-solid fa-trash-can"></i>
-      </section>
-      <section class="button-section">
-        <div class="btn">
-          <p>Total</p>
-          <p><span>2138,00 kr</span></p>
-        </div>
-        <button class="btn cart">Check out</button>
+        <section class="shoes">
+          <img src="img/adidas1.png" alt="" />
+          <img src="img/adidas2.png" alt="" />
+          <img src="img/adidas3.png" alt="" />
+          <img src="img/adidas1.png" alt="" />
+          <img src="img/adidas2.png" alt="" />
+          <img src="img/adidas3.png" alt="" />
+          <img src="img/adidas1.png" alt="" />
+          <img src="img/adidas2.png" alt="" />
+          <img src="img/adidas3.png" alt="" />
+          <img src="img/adidas1.png" alt="" />
+          <img src="img/adidas2.png" alt="" />
+          <img src="img/adidas3.png" alt="" />
+        </section>
       </section>
     </main>
+    <footer></footer>
   </body>
 </html>
